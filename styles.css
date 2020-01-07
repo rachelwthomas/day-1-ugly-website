@@ -64,20 +64,40 @@ h1 {
   margin-right: 20%;
   margin-top: 10%;
   margin-bottom: 10%;
-  background-color: rgb(235,54,128);
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
   font-family: ComicSansMS, cursive, sans-serif
 
 }
+
+.cat1 , .cat2 , .cat3 {
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0%{
+        background-color: #ff3d50;
+        border: 5px solid #871924;
+      }
+
+  100%{
+        background-color: #222291;
+        border: 5px solid #6565f2;
+      }
+    }
+
+}
+
+
+
 .under-construction{
   display: flex;
   justify-content: center;
+  width: 200px;
 }
 
 .under-construction img {
   border-style: solid;
   border-color: black;
   border-width: 5px;
-}
