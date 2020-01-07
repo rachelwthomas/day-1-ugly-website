@@ -1,4 +1,4 @@
-nav {
+/* nav {
   background-color: yellow;
   padding: 10px;
 
@@ -7,14 +7,20 @@ nav {
 nav ul li {
   list-style: none;
   display: inline;
-}
+} */
 
 body{
-  /* background-color: rgb(235,54,128) */
   background-image: url(https://media.istockphoto.com/vectors/cats-paw-print-cat-or-dog-paws-footsteps-prints-pets-footprints-and-vector-id1066633832?b=1&k=6&m=1066633832&s=612x612&h=0A-XIvzYLPQcEHu0VL4x3VMPuNPsXyJpekOk-u_hGLQ=)
 }
 
+.cat-gif{
+  width: 32%;
+  border: solid;
+  border-width: 6px;
+  border-color: lime green
 
+
+}
 h1 {
   font-size: 60px;
   text-align: center;
@@ -24,7 +30,18 @@ h1 {
 
 }
 
-img {
+#title {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.cat-image {
   width: 90%;
   border: solid;
   border-color: yellow;
@@ -51,5 +68,16 @@ img {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
+  font-family: ComicSansMS, cursive, sans-serif
 
+}
+.under-construction{
+  display: flex;
+  justify-content: center;
+}
+
+.under-construction img {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
 }
